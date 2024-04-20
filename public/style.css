@@ -1,0 +1,25 @@
+.table-loader-box {
+  height: 30px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.flash {
+  width: 100px; /* Width of the flashing element */
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent); /* Flash gradient */
+  position: absolute;
+  left: -100px; /* Start position outside the box */
+  animation: flash-animation 1s linear infinite; /* Animation properties */
+}
+
+@keyframes flash-animation {
+  0% {
+    left: -100px; /* Start position outside the box */
+  }
+  100% {
+    left: 100%; /* End position */
+  }
+}
