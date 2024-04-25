@@ -7,10 +7,10 @@ import {
 import App from  "./App";
 import HistoryOfMaterials from "./pages/historyOfMaterials";
 import FormsList from "./pages/formsList";
-import AddExistingMaterialsPage from "./pages/addExistingMaterialsPage";
-import AddNewMaterialPage from "./pages/addNewMaterialPage";
-import AddNewFinalProductPage from "./pages/addNewFinalProductPage";
-import AddExistingFinalProductPage from "./pages/addExistingFinalProductPage";
+import AddNewFinalProduct from "./components/Forms/addNewFinalProduct";
+import AddNewMaterial from "./components/Forms/addNewMaterial";
+import AddExistingMaterials from "./components/Forms/addExistingMaterials";
+import AddExistingFinalProduct from "./components/Forms/addExistingFinalProduct";
 
 const router = createBrowserRouter([
   {
@@ -27,19 +27,19 @@ const router = createBrowserRouter([
   },
   {
     path: '/add-existing-material',
-    element: <AddExistingMaterialsPage/>,
+    element: <AddExistingMaterials/>,
   },
   {
     path:'/add-new-material',
-    element: <AddNewMaterialPage/>,
+    element: <AddNewMaterial/>,
   },
   {
     path:'/add-new-final-product',
-    element:<AddNewFinalProductPage/>
+    element:<AddNewFinalProduct/>
   },
   {
     path:'/add-existing-final-product',
-    element:<AddExistingFinalProductPage/>
+    element:<AddExistingFinalProduct/>
   }
 ]);
 
