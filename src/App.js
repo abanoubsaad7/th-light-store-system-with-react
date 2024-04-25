@@ -1,21 +1,16 @@
 
 import './App.css';
-
+import { Link } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <div>
+        <h1>Hello World</h1>
+        <Link to="/forms">forms list</Link>
+        <br />
+        <Link to="/all-report">test for materials history</Link>
+      </div>
       </header>
     </div>
   );

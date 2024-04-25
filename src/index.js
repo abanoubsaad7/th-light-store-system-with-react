@@ -3,31 +3,43 @@ import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import App from  "./App";
 import HistoryOfMaterials from "./pages/historyOfMaterials";
+import FormsList from "./pages/formsList";
+import AddExistingMaterialsPage from "./pages/addExistingMaterialsPage";
+import AddNewMaterialPage from "./pages/addNewMaterialPage";
+import AddNewFinalProductPage from "./pages/addNewFinalProductPage";
+import AddExistingFinalProductPage from "./pages/addExistingFinalProductPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="/about">About Us</Link>
-        <br />
-        <Link to="/materials-report">test for materials history</Link>
-      </div>
-    ),
-  },
-  {
-    path: "/about",
     element: <App/>  ,
   },
   {
-    path: "/materials-report",
+    path: "/all-report",
     element: <HistoryOfMaterials/>
+  },
+  {
+    path:'/forms',
+    element: <FormsList/>,
+  },
+  {
+    path: '/add-existing-material',
+    element: <AddExistingMaterialsPage/>,
+  },
+  {
+    path:'/add-new-material',
+    element: <AddNewMaterialPage/>,
+  },
+  {
+    path:'/add-new-final-product',
+    element:<AddNewFinalProductPage/>
+  },
+  {
+    path:'/add-existing-final-product',
+    element:<AddExistingFinalProductPage/>
   }
 ]);
 

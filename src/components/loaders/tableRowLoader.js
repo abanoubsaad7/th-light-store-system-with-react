@@ -34,8 +34,18 @@ const TableRowLoader = () => {
             <div class="flash"></div>
           </div>
         </td>
+        <td>
+          <div class="table-loader-box ">
+            <div class="flash"></div>
+          </div>
+        </td>
       </tr>
       <tr>
+        <td>
+          <div class="table-loader-box ">
+            <div class="flash"></div>
+          </div>
+        </td>
         <td>
           <div class="table-loader-box ">
             <div class="flash"></div>

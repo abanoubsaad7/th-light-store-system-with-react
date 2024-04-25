@@ -14,6 +14,15 @@
   left: -100px; /* Start position outside the box */
   animation: flash-animation 1s linear infinite; /* Animation properties */
 }
+.materialQuantity {
+  margin-left: 0.5rem;
+  color: red;
+}
+
+.productQuantity {
+  margin-left: 0.5rem;
+  color: green;
+}
 
 @keyframes flash-animation {
   0% {
