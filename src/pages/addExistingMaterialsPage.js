@@ -1,12 +1,24 @@
-import React from 'react';
-import AddExistingMaterials from '../components/Forms/addExistingMaterials';
-
+import React from "react";
+import AddExistingMaterials from "../components/Forms/addExistingMaterials";
+import MainNav from "../components/main_and_side_Bar/mainNav";
+import SideBar from "../components/main_and_side_Bar/sideBar";
 const AddExistingMaterialsPage = () => {
   return (
     <>
-      <AddExistingMaterials/>
+      <div>
+        <MainNav />
+        <div className="row container">
+          <div className="col-3">
+            <SideBar />
+          </div>
+          <div className="col-8">
+            <AddExistingMaterials />
+          </div>
+        </div>
+      </div>
+      
     </>
   );
-}
+};
 
 export default AddExistingMaterialsPage;

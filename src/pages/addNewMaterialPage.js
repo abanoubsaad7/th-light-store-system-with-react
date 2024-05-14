@@ -1,12 +1,21 @@
 import React from 'react';
 import AddNewMaterial from '../components/Forms/addNewMaterial';
-
+import MainNav from '../components/main_and_side_Bar/mainNav';
+import SideBar from '../components/main_and_side_Bar/sideBar';
 
 const AddNewMaterialPage = () => {
   return (
-    <>
-      <AddNewMaterial/>
-    </>
+    <div>
+      <MainNav/>
+      <div className="row container">
+        <div className="col-3">
+          <SideBar/>
+        </div>
+        <div className="col-8">
+        <AddNewMaterial/>
+        </div>
+      </div>
+    </div>
   );
 }
 

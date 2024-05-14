@@ -1,0 +1,10 @@
+/* Define styles for printing */
+@media print {
+  /* Hide unnecessary elements */
+  #printButton,.btn ,.navbar ,.sideBar ,.none , .materialFilter{
+    display: none;
+  }
+  .pageContent{
+    width: 150%;
+  }
+}

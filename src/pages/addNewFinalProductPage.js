@@ -1,10 +1,19 @@
 import React from 'react';
 import AddNewFinalProduct from '../components/Forms/addNewFinalProduct';
-
+import MainNav from '../components/main_and_side_Bar/mainNav';
+import SideBar from '../components/main_and_side_Bar/sideBar';
 const AddNewFinalProductPage = () => {
   return (
-    <div className="container">
-      <AddNewFinalProduct/>
+    <div>
+      <MainNav/>
+      <div className="row container">
+        <div className="col-3">
+          <SideBar/>
+        </div>
+        <div className="col-8">
+        <AddNewFinalProduct/>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,16 +1,14 @@
 
 import './App.css';
-import { Link } from 'react-router-dom';
-import FormsList from './pages/formsList';
+import SideBar from './components/main_and_side_Bar/sideBar';
+import MainNav from './components/main_and_side_Bar/mainNav';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div >
+      <header>
       <div>
-        <h1>Hello World</h1>
-        <FormsList/>
-        <br />
-        <Link to="/all-report">test for materials history</Link>
+        <MainNav/>
+        <SideBar/>
       </div>
       </header>
     </div>

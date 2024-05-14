@@ -6,11 +6,10 @@ import {
 } from "react-router-dom";
 import App from  "./App";
 import HistoryOfMaterials from "./pages/historyOfMaterials";
-import FormsList from "./pages/formsList";
-import AddNewFinalProduct from "./components/Forms/addNewFinalProduct";
-import AddNewMaterial from "./components/Forms/addNewMaterial";
-import AddExistingMaterials from "./components/Forms/addExistingMaterials";
-import AddExistingFinalProduct from "./components/Forms/addExistingFinalProduct";
+import AddNewFinalProductPage from './pages/addNewFinalProductPage'
+import AddNewMaterialPage from './pages/addNewMaterialPage'
+import AddExistingMaterialsPage from "./pages/addExistingMaterialsPage";
+import AddExistingFinalProductPage from "./pages/addExistingFinalProductPage";
 
 const router = createBrowserRouter([
   {
@@ -22,24 +21,20 @@ const router = createBrowserRouter([
     element: <HistoryOfMaterials/>
   },
   {
-    path:'/forms',
-    element: <FormsList/>,
-  },
-  {
     path: '/add-existing-material',
-    element: <AddExistingMaterials/>,
+    element: <AddExistingMaterialsPage/>,
   },
   {
     path:'/add-new-material',
-    element: <AddNewMaterial/>,
+    element: <AddNewMaterialPage/>,
   },
   {
     path:'/add-new-final-product',
-    element:<AddNewFinalProduct/>
+    element: <AddNewFinalProductPage/>
   },
   {
     path:'/add-existing-final-product',
-    element:<AddExistingFinalProduct/>
+    element:<AddExistingFinalProductPage/>
   }
 ]);
 

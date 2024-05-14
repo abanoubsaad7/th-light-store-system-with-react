@@ -52,7 +52,7 @@ const AddExistingFinalProduct = () => {
   };
 
   return (
-    <div className="container">
+    <div className="pageContent">
       <form method="post" onSubmit={handleAddingFinalProduct}>
         <FinalProductListBox nameOfListBox={'existingFinalProductAdded.name'} />
         <input

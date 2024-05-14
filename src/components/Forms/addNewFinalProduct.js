@@ -51,7 +51,7 @@ const AddNewFinalProduct = () => {
   };
 
   return (
-    <div className="container">
+    <div className="pageContent">
       <form method="post" onSubmit={handleAddingFinalProduct}>
         <input
           type="text"
