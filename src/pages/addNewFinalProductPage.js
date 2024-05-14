@@ -7,10 +7,10 @@ const AddNewFinalProductPage = () => {
     <div>
       <MainNav/>
       <div className="row container">
-        <div className="col-3">
+        <div className="col-lg-3">
           <SideBar/>
         </div>
-        <div className="col-8">
+        <div className="col-lg-8">
         <AddNewFinalProduct/>
         </div>
       </div>

@@ -5,27 +5,27 @@ const PagesList = () => {
     <div>
       <li className="nav-item">
             <NavLink to="/add-new-material" className="nav-link page">
-              <span className="none">add new material</span>
+              <span >add new material</span>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/add-existing-material" className="nav-link page">
-              <span className="none">add existing material</span>
+              <span >add existing material</span>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/add-new-final-product" className="nav-link page">
-              <span className="none">add new final product</span>
+              <span >add new final product</span>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/add-existing-final-product" className="nav-link page">
-              <span className="none">add existing final product</span>
+              <span >add existing final product</span>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/all-report" className="nav-link page">
-              <span className="none">all reports </span>
+              <span >all reports </span>
             </NavLink>
           </li>
     </div>

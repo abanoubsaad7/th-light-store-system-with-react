@@ -33,10 +33,10 @@ const HistoryOfMaterials = () => {
     <div>
       <MainNav />
       <div className="row container">
-        <div className="col-3">
+        <div className="col-lg-3">
           <SideBar />
         </div>
-        <div className="container pageContent col-8">
+        <div className="container pageContent col-lg-8">
           <div className="materialFilter">
             <input
               type="date"
